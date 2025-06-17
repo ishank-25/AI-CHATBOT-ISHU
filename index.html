@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISHU AI Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <div class="hexagon"></div>
+                        <div class="hexagon-inner"></div>
+                    </div>
+                    <h1>ISHU</h1>
+                </div>
+                <button class="new-chat-btn" id="new-chat">
+                    <i class="fas fa-plus"></i> New Session
+                </button>
+            </div>
+            <div class="chat-history" id="chat-history">
+                <!-- Chat history appears here -->
+            </div>
+            <div class="user-profile">
+                <div class="profile-pic">
+                    <div class="initials">AI</div>
+                </div>
+                <div class="profile-info">
+                    <div class="username">AI Assistant</div>
+                    <div class="user-email">Voice: Active</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Chat -->
+        <div class="chat-container">
+            <div class="chat-header">
+                <div class="header-content" id="wake-indicator">
+                    <h2>ISHU AI</h2>
+                    <div class="status-indicator">
+                        <div class="pulse-dot"></div>
+                        <span>Standby</span>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <button class="header-btn" id="settings-btn"><i class="fas fa-cog"></i></button>
+                </div>
+            </div>
+            
+            <div class="chat-messages" id="chat-messages">
+                <div class="welcome-message">
+                    <div class="welcome-content">
+                        <h3>Welcome to ISHU AI</h3>
+                        <p>Say <strong>"Hello ISHU"</strong> or try:<br>
+                        <i>"Open Chrome"</i>, <i>"Calculate 25 * 4"</i>, <i>"Tell a joke"</i></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="input-container">
+                <div class="input-box">
+                    <textarea id="user-input" placeholder="Speak or type commands..." rows="1"></textarea>
+                    <div class="input-actions">
+                        <button class="action-btn" id="voice-btn"><i class="fas fa-microphone"></i></button>
+                        <button class="action-btn" id="send-btn"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+
+<!-- Add this near your voice button -->
+<div class="input-actions">
+    <button class="action-btn" id="wiki-btn" title="Wikipedia Mode">
+        <i class="fas fa-search"></i>
+    </button>
+</div>
+
+                <div class="disclaimer">
+                    ISU AI v1.0 (Beta) | Voice Control Enabled
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Hidden elements -->
+    <audio id="notification-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-alarm-digital-clock-beep-989.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
