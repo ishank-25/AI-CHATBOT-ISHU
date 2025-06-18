@@ -3,7 +3,6 @@ flask-cors
 wikipedia
 pyjokes
 flask_cors
-webbrowser
 subprocess
 pyjokes
 wikipedia
