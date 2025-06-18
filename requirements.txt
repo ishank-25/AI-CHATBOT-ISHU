@@ -3,5 +3,4 @@ flask-cors
 wikipedia
 pyjokes
 wikipedia
-re
-os
+
