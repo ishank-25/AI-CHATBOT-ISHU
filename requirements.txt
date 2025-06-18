@@ -2,9 +2,6 @@ flask
 flask-cors
 wikipedia
 pyjokes
-flask_cors
-subprocess
-pyjokes
 wikipedia
 re
 os
